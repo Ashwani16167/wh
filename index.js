@@ -6,7 +6,7 @@ app.use(express.json());
 
 // Verify webhook (GET)
 app.get('/webhook', (req, res) => {
-  const verifyToken = 'YOUR_VERIFY_TOKEN'; // use env variable in production
+  const verifyToken = 'EAAKqT5AnJbsBPCb5BBkmXjY9L5JVIP0Vpwpo6cLPId4mKTCix4SBbFZAaYDUaXbFgPFtUp6hQQmDPdtIYQ4BlVS8WYUEWTfsdFslApAfWuHkTZBuJxrTClx6OZBE7J6ZB88oxcMdNBUa6djkfVxYHV7JZAZAjy3w589qdMShi7QQbrXEytrIFRaOHUi1TVVIIHUs4kiqW7OvlUqznGQ4aQMdPsLTeEMiJZBhsNBJg9pYgZDZD'; // use env variable in production
   const mode = req.query['hub.mode'];
   const token = req.query['hub.verify_token'];
   const challenge = req.query['hub.challenge'];
